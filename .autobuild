@@ -1,4 +1,3 @@
-armhf staging imx6-jessie
-armhf staging rpi2-jessie
-armhfv6 staging rpi-jessie
-
+armhf stable imx6-jessie
+armhf stable rpi2-jessie
+armhfv6 stable rpi-jessie
