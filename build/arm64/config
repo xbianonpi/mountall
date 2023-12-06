@@ -1,0 +1,3 @@
+config_build_env=schroot -c amd64${config_os_version} -p --
+#config_build_env=schroot -c armhfbookworm -p --
+config_build_make=dpkg-buildpackage -uc -us -b -d -j$(grep -c processor /proc/cpuinfo) -taarch64-linux-gnu && exec true
