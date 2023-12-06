@@ -2,6 +2,9 @@
 md5sums
 content/*
 build/*/working*
+build/*/*buildinfo
+build/*/*tar.gz*
+build/*/*changes
 build.*
 *.deb
 ._*
