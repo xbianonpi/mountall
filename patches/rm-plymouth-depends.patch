@@ -1,0 +1,23 @@
+--- a/debian/changelog	2015-12-30 06:23:15.000000000 +0100
++++ b/debian/changelog	2023-03-05 22:35:27.968315818 +0100
+@@ -1,3 +1,9 @@
++mountall (2.54+xbian4) UNRELEASED; urgency=medium
++
++  * Remove plymouth from dependency list
++
++ -- Manfred Kreisl <mkeisl@xbian.org>  Thu, 01 Aug 2019 18:56:27 +0200
++
+ mountall (2.54+xbian1) UNRELEASED; urgency=medium
+ 
+   * changes to ignore plymouth, auto ignore errors, ignore /run etc
+--- a/debian/control	2014-02-20 03:06:34.000000000 +0100
++++ b/debian/control	2023-03-05 22:35:27.971649150 +0100
+@@ -10,7 +10,7 @@
+ Package: mountall
+ Architecture: any
+ Pre-Depends: dpkg (>= 1.15.7.2)
+-Depends: makedev, udev, plymouth, coreutils (>= 7.1), ${shlibs:Depends}, ${misc:Depends}
++Depends: makedev, udev, coreutils (>= 7.1), ${shlibs:Depends}, ${misc:Depends}
+ Replaces: upstart (<< 0.6.3-2)
+ Breaks: usplash (<< 0.5.47), policycoreutils (<< 2.0.69-2ubuntu4), initscripts (<< 2.88dsf-24)
+ Multi-Arch: foreign
